@@ -1,6 +1,6 @@
 # Predicting churns with Spark
 
-This project uses PySpark to predict churn based on a 12GB dataset of a fictitious music service platform, "Spartify". Check out my blog post for more details!
+This project uses PySpark to predict churn based on a 12GB dataset of a fictitious music service platform, "Spartify". Check out my [blog post](https://medium.com/@angangli/predicting-churn-with-apache-spark-b9989008fc9a) for more details!
 
 ## 1. Problem to solve
 
@@ -77,13 +77,13 @@ A small subset (~120MB) of the full dataset was used for exploratory data analys
     |--------|--------|
     | 0.8387 | 0.8229 |
 
-    Note that the scores are reasonably well, although not subperb. One limitation is that my AWS session was not able to run for a long time period, so only few hyperparameters were tuned. The model performance could be further improved by tuning broader ranges of hyperparameters.
+    Note that the scores are reasonably well, although not subperb. One limitation is that I was not able to run the model for a long time period given my AWS tier, so only few hyperparameters were tuned. The model performance could be further improved by tuning broader ranges of hyperparameters.
 
 - Churns relate to users who have received more advertisements, disliked songs more often than liked, and registered more recently.
 
     <img src="feature_importance.png" width=500>
 
-- Check out my blog post for more details!
+- Check out my [blog post](https://medium.com/@angangli/predicting-churn-with-apache-spark-b9989008fc9a) for more details!
 
 ## 5. Installation
 
