@@ -2,9 +2,11 @@
 
 This project uses PySpark to predict churn based on a 12GB dataset of a fictitious music service platform, "Spartify". Check out my [blog post](https://medium.com/@angangli/predicting-churn-with-apache-spark-b9989008fc9a) for more details!
 
-## 1. Problem to solve
+## 1. Motivation
 
-Build a machine learning model to identify users who leave the service (i.e. "churn").
+Losing customers (aka., churn) is an important business problem, because the cost of acquiring a new customer is often much higher than retaining an existing one. Being able to predict churn can help a company to prioritize retention program on customers who are most likely to churn, taking actions even before a churn happens.
+
+In this project, I used [Spark](https://spark.apache.org/) to analyze user activity dataset and build a machine learning model to identify users who are most likely to churn.
 
 ## 2. Datasets
 
@@ -94,3 +96,10 @@ A small subset (~120MB) of the full dataset was used for exploratory data analys
   - Applications: Spark: Spark 2.4.0 on Hadoop 2.8.5 YARN with Ganglia 3.7.2 and Zeppelin 0.8.0
   - Instance type: m4.xlarge
   - Number of instance: 3
+
+## 6. File structure
+
+- `Sparkify.ipynb`: exploratory data analysis, data preprocessing, and pilot development of machine learning model on local machine using data subset.
+- `Sparkify_AWS.ipynb`: data preprocessing and model tuning on AWS using the full dataset.
+- `mini_sparkify_event_data.json`: subset of user activity data.
+- `region.csv`: census regions table.
